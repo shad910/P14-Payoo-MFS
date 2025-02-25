@@ -4,73 +4,110 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Website Title Logo -->
-    <link rel="shortcut icon" href="./images/payoo.png" type="image/x-icon">
+  <!-- Website Title Logo -->
+  <link rel="shortcut icon" href="./images/payoo.png" type="image/x-icon">
 
-    <!-- Google Font CDN (Outfit)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Google Font CDN (Outfit)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS & DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS & DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/89cee7f055.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/89cee7f055.js" crossorigin="anonymous"></script>
 
-    <!-- Tailwind CSS Custom Configuration Section -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+  <!-- Tailwind CSS Custom Configuration Section -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            "fbg": '1E1E1E',
+          }
         }
-    </script>
+      }
+    }
+  </script>
 
-    <!-- Style Section -->
-    <style>
-
+  <!-- Style Section -->
+  <style>
     /* Font Styling Section */
     .outfit {
-        font-family: "Outfit", serif;
+      font-family: "Outfit", serif;
     }
-    
-    </style>
+  </style>
 
-    <!-- Animation Section -->
+  <!-- Animation Section -->
 
-    <!-- Title Section -->
-    <title>Payoo MFS</title>
+  <!-- Title Section -->
+  <title>Payoo MFS</title>
 
 </head>
 
-<body class="outfit">
-    
-    <!-- Header Section -->
-    <Header>
+<body class="outfit bg-gray-800">
 
-    </Header>
+  <!-- Header Section -->
+  <Header>
 
-    <!-- Main Section -->
-    <main>
+  </Header>
 
-    </main>
+  <!-- Main Section -->
+  <main>
 
-    <!-- Footer Section -->
-    <footer>
+    <section class="bg-fbg max-w-md min-h-screen mx-auto py-6 bg-gray-100">
 
-    </footer>
+      <div class="flex justify-center items-center mt-10 mb-5">
+        <!-- Image Container  -->
+        <div class="mt-10 w-9/12 relative flex justify-center items-center">
+          <img class="w-52 absolute " src="./images/bg.png" alt="Blue rounded Half-Circle">
+          <img class="w-20" src="./images/Group.png" alt="Right Tick Mark Group">
+        </div>
+      </div>
 
-    <!-- Section Linked HTML file to JavaScript file -->
-    <script src="./script/form.js"></script>
+      <!-- Login Section -->
+      <div class="">
+        <div class="hero-content flex justify-center items-center">
+          <div class="bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Mobile Number</span>
+                </label>
+                <input type="number" value="01927310931" placeholder="Enter your number" id="account-number"
+                  class="input input-bordered rounded-xl" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">4 Digit Pin</span>
+                </label>
+                <input type="text" value="44555" placeholder="Enter 4 Digit Pin" id="pin-number"
+                  class="input input-bordered rounded-xl" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="login-btn" class="btn btn-primary">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+
+  </footer>
+
+  <!-- Section Linked HTML file to JavaScript file -->
+  <script src="./script/login.js"></script>
 
 </body>
 
