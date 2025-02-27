@@ -203,22 +203,22 @@
                                     <span class="label-text">Agent Number</span>
                                 </label>
                                 <input type="number" value="01927310931" placeholder="Enter 11 digit number"
-                                    id="account-number" class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
+                                    id="co-agent-number" class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
                                 <label class="label">
                                     <span class="label-text">Amount</span>
                                 </label>
                                 <input type="number" value="500" placeholder="Add Amount to withdraw"
-                                    id="account-number" class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
+                                    id="co-amount" class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Pin Number</span>
                                 </label>
-                                <input type="text" value="44555" placeholder="Enter 4 digit pin number" id="pin-number"
+                                <input type="text" value="44555" placeholder="Enter 4 digit pin number" id="co-pin-number"
                                     class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
                             </div>
                             <div class="form-control mt-6">
-                                <button id="login-btn" class="btn btn-primary rounded-xl">Withdraw Money</button>
+                                <button id="cashOut-btn" class="btn btn-primary rounded-xl">Withdraw Money</button>
                             </div>
                         </form>
                     </div>
@@ -239,22 +239,22 @@
                                     <span class="label-text">User Account Number</span>
                                 </label>
                                 <input type="number" value="01927310931" placeholder="Enter 11 digit number"
-                                    id="account-number" class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
+                                    id="tm-account-number" class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
                                 <label class="label">
                                     <span class="label-text">Amount</span>
                                 </label>
                                 <input type="number" value="500" placeholder="Enter amount to transfer"
-                                    id="account-number" class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
+                                    id="tm-amount" class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Pin Number</span>
                                 </label>
-                                <input type="text" value="44555" placeholder="Enter 4 digit pin number" id="pin-number"
+                                <input type="text" value="44555" placeholder="Enter 4 digit pin number" id="tm-pin-number"
                                     class="input input-bordered rounded-xl border-none bg-gray-rgba" required />
                             </div>
                             <div class="form-control mt-6">
-                                <button id="login-btn" class="btn btn-primary rounded-xl">Send Now</button>
+                                <button id="transfer-btn" class="btn btn-primary rounded-xl">Send Now</button>
                             </div>
                         </form>
                     </div>
@@ -328,7 +328,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </main>
 
         <!-- Footer Section -->
@@ -355,6 +355,8 @@
     <script src="./script/logout.js"></script>
     <script src="./script/toggle.js"></script>
     <script src="./script/addMoney.js"></script>
+    <script src="./script/cashOut.js"></script>
+    <script src="./script/transfer.js"></script>
 
 </body>
 

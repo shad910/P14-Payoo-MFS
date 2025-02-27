@@ -12,7 +12,7 @@ const addMoney = document.getElementById("addMoney-btn").addEventListener("click
     if(accountNumber.length === 11 && typeAddAmount && pinNumber){
         const totalAmount = convertCurrentAmount + convertTypeAmount;
         document.getElementById("currentAmount").innerText = totalAmount;
-        alert('Balance Added')
+        alert(convertTypeAmount+' Added successfully')
     }
     else{
         alert('Enter valid Information');
