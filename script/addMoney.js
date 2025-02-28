@@ -8,6 +8,8 @@ const addMoney = document
         const typeAddAmount = document.getElementById("an-tam").value;
         const pinNumber = document.getElementById("an-pin-number").value;
 
+        const bankOption = document.getElementById("addBank").value; 
+
         const convertCurrentAmount = parseFloat(currentAmount);
         const convertTypeAmount = parseFloat(typeAddAmount);
 
@@ -27,6 +29,7 @@ const addMoney = document
                 <img class="w-6" src="../images/wallet1.png">
             </div>
             <div class="space-y-1 text-sm">
+                <p class="font-semibold">Bank: ${bankOption}</p>
                 <p class="font-semibold">Account Number: ${accountNumber}</p>
                 <p class="font-medium">Added Amount    : ${typeAddAmount}</p>
             </div>
