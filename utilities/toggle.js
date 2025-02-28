@@ -6,6 +6,8 @@ const addMoneyBox = document.getElementById("addMoney-box").addEventListener("cl
     document.getElementById("transferMoney-section").style.display = "none" ;
     document.getElementById("getBonus-section").style.display = "none" ;
     document.getElementById("payBill-section").style.display = "none" ;
+    document.getElementById("Payment-Section").style.display = "none" ;
+
 });
 
 // 2
@@ -16,6 +18,7 @@ const cashOutBox = document.getElementById("sendMoney-box").addEventListener("cl
     document.getElementById("transferMoney-section").style.display = "none" ;
     document.getElementById("getBonus-section").style.display = "none" ;
     document.getElementById("payBill-section").style.display = "none" ;
+    document.getElementById("Payment-Section").style.display = "none" ;
 });
 
 // 3
@@ -26,6 +29,7 @@ const transferMoneyBox = document.getElementById("transferMoney-box").addEventLi
     document.getElementById("transferMoney-section").style.display = "block" ;
     document.getElementById("getBonus-section").style.display = "none" ;
     document.getElementById("payBill-section").style.display = "none" ;
+    document.getElementById("Payment-Section").style.display = "none" ;
 });
 
 // 4
@@ -36,6 +40,7 @@ const getBonusBox = document.getElementById("getBonus-box").addEventListener("cl
     document.getElementById("transferMoney-section").style.display = "none" ;
     document.getElementById("getBonus-section").style.display = "block" ;
     document.getElementById("payBill-section").style.display = "none" ;
+    document.getElementById("Payment-Section").style.display = "none" ;
 });
 
 // 5
@@ -46,8 +51,16 @@ const payBillBox = document.getElementById("payBill-box").addEventListener("clic
     document.getElementById("transferMoney-section").style.display = "none" ;
     document.getElementById("getBonus-section").style.display = "none" ;
     document.getElementById("payBill-section").style.display = "block" ;
+    document.getElementById("Payment-Section").style.display = "none" ;
 });
 
 // 6
-document.getElementById("addMoney-section").style.display = "none" ;
-
+document.getElementById("Payment-Section").style.display = "none" ;
+const transactionsBox = document.getElementById("transactions-box").addEventListener("click", function(){
+    document.getElementById("addMoney-section").style.display = "none" ;
+    document.getElementById("cashOut-section").style.display = "none" ;
+    document.getElementById("transferMoney-section").style.display = "none" ;
+    document.getElementById("getBonus-section").style.display = "none" ;
+    document.getElementById("payBill-section").style.display = "none" ;
+    document.getElementById("Payment-Section").style.display = "block" ;
+});
