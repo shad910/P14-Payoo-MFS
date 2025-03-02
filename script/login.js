@@ -11,7 +11,7 @@ const loginBTN = document.getElementById("login-btn").addEventListener("click", 
 
     if( accountNumber.length === 11 ){
         if( pinNumber.length > 3 || pinNumber.length === 4 ){
-            window.location.href='../main.html';
+            window.location.href='main.html';
         }
         else{
             alert('Enter valid password')
